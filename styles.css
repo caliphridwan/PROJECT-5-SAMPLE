@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: black; */
+}
+.container{
+    background-color: white;
+    width: 90%;
+    margin:auto;
+}
+.section-1 header{
+    max-height: 13vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-1 header img{
+    height: 70px;
+    width: 70px;
+}
+
+.section-2 .flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 24rem;
+    margin-top: 4rem;
+}
+.flex .flex-1{
+    display:flex;
+    flex-direction: column;
+    width: 45%;
+    line-height: 2.5rem;
+}
+.flex .flex-1 h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px red;
+    word-spacing: .5rem;
+    letter-spacing: .6rem;
+    
+}
+.flex .flex-1 h3{
+    font-size: 1.5rem;
+    word-spacing: 1rem;
+    letter-spacing: 1rem;
+    
+}
+.flex .flex-1 h4{
+    font-size: 1.2rem;
+    
+}
+.flex .flex-1 button{
+    width: 200px;
+    padding: 1rem;
+    color:red;
+}
+.flex .flex-2{
+    width: 55%;
+    display:flex;
+    justify-content: flex-end;
+}
+.flex .flex-2 img{
+    width: 100vw;
+    border-top-left-radius: 20rem;
+    border-bottom-left-radius: 20rem;
+    border-left: 10px solid brown;
+    
+}
+
+.section-3 .bookings{
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bookings .book1{
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items:center;
+    height: 250px;
+    width:270px;
+    border-radius: 6px;
+    background-color: orangered;
+    color:white;
+    text-align: center;
+}
+
+.bookings .book1 img{
+    width: 100px;
+    height:100px;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    
+}
+.bookings .book1 button{
+    padding: .6rem;
+    color: black;
+    background-color:white;
+    border-radius: 1rem;
+    border:0;
+}
+
+.section-4 .text-4 h2{
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+   text-align:center;
+}
+
+.bookings .book1 h3{
+    color:white;
+    font-weight:bolder;
+}
+
+.section-4 .flexes{
+    display:flex;
+    height: 25rem;
+    /* width: 100vw; */
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+
+.section-4 .flexes .flex-2{
+    /* background; */
+    height: 100px;
+    width: 48%;
+
+}
+
+.flex-2 .flex-logo{
+    background-color:orangered;
+    height: 40px;
+    width: 40px;
+    float:left;
+    border-radius: 100%;
+}
+
+.section-5 .about{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: gray; */
+    width: 100%;
+   
+}
+
+.section-5 .about .about-2{
+    width: 50vw;
+}
+
+.section-5 .about .about-2 img{
+    width: 100%;
+    height: 400px;
+}
+
+.inline-flex{
+    margin-top: 2rem;
+    display:flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.about-1{
+    width: 50%;
+}
+
+.last-section .last{
+    height: 400px;
+    width: 100%;
+    background-color: gray;
+}
+
+.last-section .last h1{
+    /* margin-top: 2e */
+    text-align: center;
+}
+
+.about h4{
+    margin-top: .8rem;
+}
+.last .head-1{
+    margin-top: 2rem;
+}
+
+.last-section .bookings{
+    width: 70%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    
+}
+.last-section .bookings .book1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 250px;
+    width:270px;
+    margin-top: 2rem;
+    border-radius: 6px;
+    background-color: orangered;
+    color:white;
+    text-align: center;
+}
+
+.bookings .book1 img{
+    width: 100px;
+    height:100px;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    
+}
+.last h1{
+    padding: .6rem;
+    color:white;
+}
+
+
+@media (max-width:512px){
+    nav{
+        padding: 50px;
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+        font-size: .7rem;
+    }
+    .section-2{
+        display:block;
+    }
+    .flex-2 img{
+        display: none;
+    }
+    .bookings .book1{
+        margin-left: 20px;
+        flex-direction: column;
+        display:flex;
+        margin-top: 6rem;
+    }
+    .last-section .bookings .book1{
+        font-size: .6rem;
+        width: 150px;
+        margin-left:2px;
+
+
+    }
+    .last-section .last {
+        min-height: 300px;
+        min-width: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+.last-section .bookings .book1 :last-child{
+    display:none;
+}
+}
