@@ -3,9 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-body{
-    /* background-color: black; */
-}
+
 .container{
     background-color: white;
     width: 90%;
@@ -44,6 +42,7 @@ body{
     text-shadow: 2px 2px red;
     word-spacing: .5rem;
     letter-spacing: .6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 .flex .flex-1 h3{
@@ -243,16 +242,18 @@ body{
     .flex-2 img{
         display: none;
     }
-    .bookings .book1{
+    .section-3 .bookings .book1{
         margin-left: 20px;
         flex-direction: column;
         display:flex;
         margin-top: 6rem;
+        overflow:hidden;
     }
     .last-section .bookings .book1{
         font-size: .6rem;
         width: 150px;
         margin-left:2px;
+        overflow:hidden;
 
 
     }
